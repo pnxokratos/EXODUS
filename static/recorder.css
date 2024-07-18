@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #00e5ff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.4);
+    margin-bottom: 20px;
+}
+
+.btn-record {
+    background-color: transparent;
+    border: 2px solid #00e5ff;
+    border-radius: 50%;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4), 0 0 30px rgba(0, 229, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-record-green:hover {
+    background-color: #00e5ff;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.7), 0 0 40px rgba(0, 229, 255, 0.5);
+}
+
+.btn-record-red {
+    border-color: #ff1744;
+}
+
+.btn-record-red:hover {
+    background-color: #ff1744;
+    box-shadow: 0 0 30px rgba(255, 23, 68, 0.7), 0 0 40px rgba(255, 23, 68, 0.5);
+}
+
+.mic-img {
+    width: 60px;
+    height: 60px;
+}
+
+#text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #00e5ff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.4);
+}
+
+.record-spinner {
+    color: #ff1744;
+}
+
+#events {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn-record {
+        width: 80px;
+        height: 80px;
+    }
+
+    .mic-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn-record {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mic-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-record {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mic-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #text {
+        font-size: 0.9rem;
+    }
+}
